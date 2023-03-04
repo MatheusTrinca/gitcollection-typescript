@@ -7,7 +7,7 @@ export const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" exact component={Dashboard} />
-      <Route path="/repositories" component={Repo} />
+      <Route path="/repositories/:repository+" component={Repo} />
     </Switch>
   );
 };
